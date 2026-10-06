@@ -3,10 +3,10 @@
 <head>
   <title>Registration Page</title>
 
+  <!-- External style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-  <link rel="stylesheet" type="text/css" href="pro3Style.css">
-
-
+  <!-- Internal style sheet -->
   <style>
     label
     {
@@ -31,21 +31,21 @@
 <body>
   <div id="registrationBox">
 
-
+    <!-- Inline style sheet -->
     <h2 style="text-align: center; color: darkblue;">Registration Form</h2>
 
     <form onsubmit="return validateForm()">
       <label>First Name</label>
-      <input type="text" id="firstName">
+      <input type="text" id="firstName" placeholder="Enter First number">
 
       <label>Password</label>
-      <input type="password" id="password">
+      <input type="password" id="password" placeholder="Enter Password">
 
       <label>E-mail id</label>
-      <input type="text" id="emailId">
+      <input type="text" id="emailId" placeholder="Re-enter Password">
 
       <label>Mobile Number</label>
-      <input type="text" id="mobileNumber">
+      <input type="text" id="mobileNumber" placeholder="Enter MobileNumber">
 
       <button type="submit">Register</button>
     </form>
@@ -59,33 +59,34 @@
       var emailId = document.getElementById("emailId").value;
       var mobileNumber = document.getElementById("mobileNumber").value;
 
+      // Patterns used for checking
       var namePattern = /^[a-zA-Z]{6,}$/;
       var passwordPattern = /^.{6,}$/;
       var emailPattern = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
       var mobilePattern = /^[0-9]{10}$/;
 
-
+      // a) First name: only alphabets and at least 6 characters
       if (namePattern.test(firstName) == false)
       {
         alert("First name must contain only alphabets and at least 6 characters");
         return false;
       }
 
-
+      // b) Password: at least 6 characters
       if (passwordPattern.test(password) == false)
       {
         alert("Password must be at least 6 characters");
         return false;
       }
 
-
+      // c) E-mail: must follow name@domain.com
       if (emailPattern.test(emailId) == false)
       {
         alert("Enter a valid e-mail id like name@domain.com");
         return false;
       }
 
- 
+      // d) Mobile number: exactly 10 digits
       if (mobilePattern.test(mobileNumber) == false)
       {
         alert("Mobile number must contain exactly 10 digits");
