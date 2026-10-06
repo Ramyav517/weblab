@@ -11,8 +11,8 @@
     var fontSize = 5;
     var isGrowing = true;
 
-    textElement.innerText = "TEXT-GROWING";
-    textElement.style.color = "red";
+    textElement.innerText = "HELLO";
+    textElement.style.color = "green";
 
     var timerId = setInterval(changeSize, 100);
 
@@ -20,19 +20,17 @@
     {
       if (isGrowing == true)
       {
- 
         fontSize = fontSize + 1;
 
         if (fontSize >= 50)
         {
           isGrowing = false;
-          textElement.innerText = "TEXTSHRINKING";
-          textElement.style.color = "blue";
+          textElement.innerText = "GOODBYE";
+          textElement.style.color = "purple";
         }
       }
       else
       {
-
         fontSize = fontSize - 1;
 
         if (fontSize <= 5)
