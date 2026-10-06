@@ -1,15 +1,15 @@
 body
 {
   font-family: Arial, sans-serif;
-  background-color: lightyellow;
+  background-color: lightcyan;
 }
 
 #registrationBox
 {
-  width: 300px;
-  margin: 40px auto;
+  width: 320px;
+  margin: 50px auto;
   padding: 20px;
-  background-color: lightblue;
-  border: 1px solid red;
-  border-radius: 8px;
+  background-color: lightyellow;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
 }
