@@ -7,6 +7,8 @@
     text-align: center;
     padding-top: 100px;
   }
+
+
 </style>
 </head>
 <body>
@@ -41,7 +43,10 @@
 
         if (fontSize <= 5)
         {
-          clearInterval(timerId);
+          frontsize = 5;
+          isGrowing = true;
+          textElement.innerText = "TEXTGROWING";
+          textElement.style.color = "red";
         }
       }
 
