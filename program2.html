@@ -2,6 +2,12 @@
 <html>
 <head>
   <title>Text Animation</title>
+<style>
+  body {
+    text-align: center;
+    padding-top: 100px;
+  }
+</style>
 </head>
 <body>
   <h1 id="animatedText"></h1>
@@ -10,8 +16,8 @@
     var textElement = document.getElementById("animatedText");
     var fontSize = 5;
     var isGrowing = true;
-
-    textElement.innerText = "HELLO";
+    
+    textElement.innerText = "TEXTGROWING";
     textElement.style.color = "green";
 
     var timerId = setInterval(changeSize, 100);
@@ -25,7 +31,7 @@
         if (fontSize >= 50)
         {
           isGrowing = false;
-          textElement.innerText = "GOODBYE";
+          textElement.innerText = "TEXTSHRINKING";
           textElement.style.color = "purple";
         }
       }
