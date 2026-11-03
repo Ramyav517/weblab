@@ -1,41 +1,55 @@
-*
-{
-	display: block;
-	margin-left: 15px;
+
+* {
+    font-family: Arial;
 }
 
-USN 
-{
-	color: red;
-	font-size: 30px;
-	margin-top: 20px;
+STUDENTDATA {
+    display: block;
+    margin-left: 15px;
+    background-color: lightyellow;
+}
+
+STUDENT {
+    display: block;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 15px;
+}
+
+USN {
+    display: block;
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 NAME {
-	color: blue;
-	font-size: 26px;
+    display: block;
+    color: blue;
+    font-size: 26px;
 }
 
-COLLEGE
-{
-	color: green;
-	font-size: 22px;
+COLLEGE {
+    display: block;
+    color: green;
+    font-size: 22px;
 }
 
-PROGRAMME 
-{
-	color: purple;
-	font-size: 22px;
+PROGRAMME {
+    display: block;
+    color: purple;
+    font-size: 22px;
 }
 
-YEAR 
-{
-	color: orange;
-	font-size: 20px;
+YEAR {
+    display: block;
+    color: orange;
+    font-size: 20px;
 }
 
-EMAIL 
-{
-	color: brown;
-	font-size: 18px;
+EMAIL {
+    display: block;
+    color: brown;
+    font-size: 18px;
 }
